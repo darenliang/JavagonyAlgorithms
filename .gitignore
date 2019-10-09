@@ -1,3 +1,6 @@
+# IntelliJ folder
+.idea/
+
 # Compiled class file
 *.class
 
