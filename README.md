@@ -48,3 +48,14 @@ Using a bitwise AND operator, &, we can get 0 for non-negative values and 1 for 
 
 11111111111111111111111111111111 & 1 => 1
 ```
+
+Using these techniques, we can simulate if conditionals in Java.
+```Java
+private static final int[] ints = {1, 0};
+try {
+    temp = 1 / ints[((b - a) >> 31) & 1];
+} catch (ArithmeticException e) {
+    doSomething();
+}
+```
+which executes `doSomething()` when `a > b`.
