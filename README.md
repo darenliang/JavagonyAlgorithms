@@ -54,7 +54,7 @@ Using these techniques, we can simulate if conditionals in Java.
 ```Java
 int[] ints = {1, 0};
 try {
-    temp = 1 / ints[((b - a) >> 31) & 1];
+    int temp = 1 / ints[((b - a) >> 31) & 1];
 } catch (ArithmeticException e) {
     doSomething();
 }
