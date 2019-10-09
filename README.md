@@ -16,7 +16,7 @@ switch(){}
 
 ### What is the weird thing going on with the conditionals?
 
-I've decided to use bitwise operators to convert negative and positive integers to ints 0 and 1.
+I've decided to use bitwise operators to convert negative and non-negative integers to ints 0 and 1.
 
 When you use bitwise right shift operator, >>, it shifts the binary digits a specified number of places to the right.
 
@@ -54,7 +54,7 @@ Using these techniques, we can simulate if conditionals in Java.
 ```Java
 int[] ints = {1, 0};
 try {
-    temp = 1 / ints[((b - a) >> 31) & 1];
+    int temp = 1 / ints[((b - a) >> 31) & 1];
 } catch (ArithmeticException e) {
     doSomething();
 }
