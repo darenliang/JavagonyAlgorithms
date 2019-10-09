@@ -1,2 +1,2 @@
-# JavagonyAlgorithms
- Algorithms for Javagony
+# Algorithms for Javagony
+
