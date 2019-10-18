@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+// implements sorting algorithms
 public class Sorting {
     private static final int[] ints = {1, 0};
     private static int temp;
@@ -20,6 +21,7 @@ public class Sorting {
         return pass(arr, i + 1);
     }
 
+    // bubbleSort sorts arrays
     private static int[] bubbleSort(int[] arr) {
         try {
             temp = 1 / ints[((arr.length - 2) >> 31) & 1];

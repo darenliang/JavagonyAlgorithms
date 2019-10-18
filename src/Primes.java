@@ -1,7 +1,9 @@
+// implements basic prime checker
 public class Primes {
     private static final int[] ints = {1, 0};
     private static int temp;
 
+    // isPrime determines if integer is prime
     private static boolean isPrime(int n) {
         return isPrime(n, 2);
     }

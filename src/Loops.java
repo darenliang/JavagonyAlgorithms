@@ -1,7 +1,9 @@
+// implements basic loops
 public class Loops {
     private static final int[] ints = {1, 0};
     private static int temp;
 
+    // countToN counts to n
     private static void countToN(int n) {
         countToN(n, 1);
     }
