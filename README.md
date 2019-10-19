@@ -13,8 +13,11 @@ do {} while ();
 switch(){}
 ?:
 ```
+### How do loops work?
 
-### What is the weird thing going on with the conditionals?
+For loops, you must use recursion and pass in a loop counter as one of the function parameters.
+
+### How do conditionals work?
 
 I've decided to use bitwise operators to convert negative and non-negative integers to ints 0 and 1.
 
